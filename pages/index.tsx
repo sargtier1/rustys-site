@@ -7,7 +7,6 @@ const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <Hero />
     <Features />
-    <Stats />
   </Layout>
 )
 

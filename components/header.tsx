@@ -69,6 +69,8 @@ export const Header = ({ show, handleToggle, router, ...rest }) => {
             letterSpacing={'-.1rem'}
             textDecor='underline'
             alignSelf={{ base: 'flex-start' }}
+            onClick={() => router.push('/')}
+            cursor='pointer'
           >
             Rusty
           </Heading>
@@ -78,6 +80,9 @@ export const Header = ({ show, handleToggle, router, ...rest }) => {
             alignSelf='flex-end'
             alignItems='center'
           >
+            <Button onClick={() => router.push('/contact')}>
+              Reach Out
+            </Button>
             {/* <IconButton
               aria-label='Open Nav Menu'
               variant='ghost'
@@ -85,9 +90,6 @@ export const Header = ({ show, handleToggle, router, ...rest }) => {
               onClick={handleToggle}
               display={{ base: 'flex', sm: 'none' }}
             /> */}
-            <Button>
-              Reach Out
-            </Button>
             {/* <Button
               display={{ base: 'none', sm: 'flex' }}
               href='/'
@@ -115,6 +117,7 @@ export const Header = ({ show, handleToggle, router, ...rest }) => {
             </Button> */}
           </Stack>
         </Flex>
+        {/* 
         <Collapse in={show}>
           <Box
             display={{ base: show ? 'block' : 'none', md: 'flex' }}
@@ -173,7 +176,8 @@ export const Header = ({ show, handleToggle, router, ...rest }) => {
               </ListItem>
             </List>
           </Box>
-        </Collapse>
+        </Collapse> */}
+
       </Stack>
     </Flex>
 
