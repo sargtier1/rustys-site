@@ -1,11 +1,7 @@
 import {
-  Button,
   Flex,
-  Heading,
   Image,
   Stack,
-  Text,
-  useBreakpointValue,
 } from '@chakra-ui/react';
 import { ContactForm } from './contactForm';
 

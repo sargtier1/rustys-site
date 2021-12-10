@@ -1,7 +1,6 @@
+import Layout from '../components/Layout'
 import { Spacer } from '@chakra-ui/layout'
 import { ContactForm } from '../components/contactForm'
-import { ContactFormSection } from '../components/contactFormSection'
-import Layout from '../components/Layout'
 import { Stats } from '../components/stats'
 
 const IndexPage = () => (

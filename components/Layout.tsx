@@ -14,6 +14,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
   const router = useRouter()
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
+  
   Router.events.on('routeChangeComplete', (url) => {
     setShow(false)
   })
@@ -26,7 +27,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header show={show} handleToggle={handleToggle} router={router} />
-      <Box position='relative' minHeight='100vh'>
+      <Box position='relative'>
         <Box display={{base: 'block', md: 'none'}} height='4rem'/>
         {children}
       </Box>
